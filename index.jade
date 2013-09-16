@@ -1,0 +1,33 @@
+!!! 5
+html
+  head
+    link(href="./bootstrap/css/bootstrap.min.css", rel="stylesheet")
+    link(href="./style.css", rel="stylesheet")
+    script(src="http://code.jquery.com/jquery-1.10.2.min.js", type="text/javascript")
+    script(src="./JSVerbalExpressions/VerbalExpressions.js", type="text/javascript")
+    script(src="./jquery-ui-1.10.3/ui/jquery-ui.js" , type="text/javascript")
+    //script(src="./showverbalexpression.js", type="text/javascript")
+    script(src="./bootstrap/js/bootstrap.min.js", type="text/javascript")
+    script(src="./model.js", type="text/javascript")
+    script(src="./view.js", type="text/javascript")
+    script(src="./controller.js", type="text/javascript")
+
+  body
+    .container
+      section.span12
+        h1 verval expression
+        .row
+          .dropbox.span8#main
+            p hello
+          .selectlist.span4#selectionbox
+
+       section.span12
+         h2.span12 Manual input
+         form
+           input.span12(type="textarea", id="verextext")
+           input(type="button", value="eval", id="verexeval")
+
+       section.span12
+         h2.span12 output
+         p#regexp output
+
